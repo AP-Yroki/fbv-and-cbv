@@ -1,0 +1,22 @@
+<!-- app/templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главный экран</title>
+</head>
+<body>
+    <h1>Главный экран</h1>
+    <ul>
+
+        <li><a href="{% url 'add_category' %}">Добавить категорию</a></li>
+        <li><a href="{% url 'add_author' %}">Добавить автора</a></li>
+        <li><a href="{% url 'add_publisher' %}">Добавить издателя</a></li><br>
+        <li><a href="{% url 'news_list' %}">Смотреть список новостей</a></li>
+        <li><a href="{% url 'add_news' %}">Добавить новость</a></li><br>
+    </ul>
+</body>
+</html>

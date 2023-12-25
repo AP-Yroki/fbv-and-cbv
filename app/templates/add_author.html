@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление автора</title>
+</head>
+<body>
+    <h2>Добавление автора</h2>
+    <form method="post" action="{% url 'add_author' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Добавить автораr</button>
+    </form>
+    <a href="{% url 'news_list' %}">Вернутсьяя к списку новостей</a>
+</body>
+</html>
